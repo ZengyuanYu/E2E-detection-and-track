@@ -69,7 +69,8 @@ if __name__ == '__main__':
                            "model/ocr_plate_all_gru.h5")
     correct, tt = cutimage(dir)
     usetime = time.time() - startime
-    print("共有{}张图片参与测试，预测正确{}张\n程序运行时间时间：{}s\n准确率：{}%\n平均每幅图片耗时：{}s".format(
+    print("共有{}张图片参与测试，预测正确{}张\n程序运行时间时间：{}s\
+            \n准确率：{}%\n平均每幅图片耗时：{}s".format(
             tt,
             correct,
             usetime,
@@ -77,5 +78,4 @@ if __name__ == '__main__':
             (usetime/tt)
             )
         )
-    # print("".format()
-    # print("平均每张图片的处理时间为：{}s".format(endtime/(correct+error)))
+   

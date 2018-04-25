@@ -39,7 +39,7 @@ def drawRectBox(image,rect,addText):
 import HyperLPRLite as pr
 import cv2
 import numpy as np
-grr = cv2.imread("images_rec/test.jpg")
+grr = cv2.imread("images_rec/苏D22022.jpg")
 model = pr.LPR("model/cascade.xml","model/model12.h5","model/ocr_plate_all_gru.h5")
 for pstr,confidence,rect in model.SimpleRecognizePlateByE2E(grr):
         # if confidence>0.7:
